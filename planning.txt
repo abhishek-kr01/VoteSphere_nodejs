@@ -1,0 +1,43 @@
+voting application
+what ???????
+A functionality where user can vote to the given set of condidates
+
+Models?
+Routes?
+
+voting app functionality
+
+1. user sign in/sign up
+2. see the list of condidates
+3. vote one of the condidate, after votig, user can't vote again
+4. there is a route which the list of condidates and their live vote count stored by their vote count
+5. user data must contain their one unique government id proof named: aadhar card number
+6. there shuld be one admin who can only maintain the table of condidates and he can't able to vote at all
+7. user can change their password
+8. user can login only with aadhar card number and password
+9. admin can't vote at all
+
+
+-----------------------------------------------
+
+Routes
+
+User Authentication:
+    /signup: POST - Create a new user account
+    /login: POST - Login in to an existing account [aadhar card number + password]
+
+Voting:
+    /condidates: GET - Get the list of condidates
+    /vote/:condidateId: POST - Vote for a specific condidate
+
+Vote Count:
+    /vote/count: GET - Get the list of condidates sorted by their vote counts
+
+User Profile:
+    /profile: GET - Get the user's profile information
+    /profile/password: PUT - Change the user's password
+
+Admin Condidate Management:
+    /condidates: POST - Create a new condidate
+    /condidates/:condidateId: PUT - Update an existing condidate
+    /condidates/:condidateId: DELETE - Delete a condidate from the list
