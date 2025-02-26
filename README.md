@@ -53,7 +53,7 @@ VoteSphere is a secure voting application that allows users to cast votes for ca
 
 ## Installation and Setup
 1. Clone the repository:
-git clone https://github.com/yourusername/votesphere.git
+git clone https://github.com/abhishek-kr01/VoteSphere_nodejs.git
 
 2. Navigate to the project directory:
    cd votesphere
